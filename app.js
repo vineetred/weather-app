@@ -21,22 +21,12 @@ geocode.geocodeAddress(argv.address, (errorMessage, results) => {
     } else {
         console.log(`The weather for address: ${results.address}`);
 
-        weather.getWeather(results.latitude,results.longitude,(errorWeatherMessage, weatherResults)=> {
-            if(errorWeatherMessage) {
+        weather.getWeather(results.latitude, results.longitude, (errorWeatherMessage, weatherResults) => {
+            if (errorWeatherMessage) {
                 console.log(errorWeatherMessage);
-            }
-            else {
-                console.log(`Temperature: ${weatherResults.temperature} celsius`);
+            } else {
+                console.log(`The temperature is ${weatherResults.temperature} celsius and it feels like ${weatherResults.apparentTemperature} celsius`);
             }
         });
     }
 })
-
-// weather.getWeather(17.385044,78.486671,(errorMessage, results)=> {
-//     if(errorMessage) {
-//         console.log(errorMessage);
-//     }
-//     else {
-//         console.log(JSON.stringify(results, undefined, 2));
-//     }
-// });
