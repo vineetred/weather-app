@@ -5,20 +5,19 @@ const geocode = require('./geocode/geocode.js')
 const argv = yargs
     .options({
         a: {
-        demand: true,
-        alias: 'address',
-        describe: 'Enter the address',
-        string: true,
+            demand: true,
+            alias: 'address',
+            describe: 'Enter the address',
+            string: true,
         }
     })
     .help()
     .argv;
-    
-geocode.geocodeAddress(argv.address,(errorMessage, results)=> {
-    if(errorMessage) {
+
+geocode.geocodeAddress(argv.address, (errorMessage, results) => {
+    if (errorMessage) {
         console.log(errorMessage);
-    }
-    else {
+    } else {
         console.log(JSON.stringify(results, undefined, 2));
     }
 })
