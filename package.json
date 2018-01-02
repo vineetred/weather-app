@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vineetred/weather-app#readme",
   "dependencies": {
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "yargs": "^10.0.3"
   }
 }

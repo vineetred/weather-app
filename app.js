@@ -1,7 +1,23 @@
 const request = require('request');
+const yargs = require('yargs');
+
+
+const argv = yargs
+    .options({
+        a: {
+        demand: true,
+        alias: 'address',
+        describe: 'Enter the address',
+        string: true,
+        }
+    })
+    .help()
+    .argv;
+//Encoding the address that yargs takes in through the terminal
+var address = encodeURIComponent(argv.a);
 
 request({
-    url: 'https://maps.googleapis.com/maps/api/geocode/json?address=1301%20lombard%20street%20philadelphia',
+    url: `https://maps.googleapis.com/maps/api/geocode/json?address=${address}`, //Template strings to inject address
     json: true,
 }, (error, response, body) => {
 
