@@ -14,5 +14,5 @@ Example:
 ```
 node app.js -a="Empire State Building, NYC"
 >350 5th Ave, New York, NY 10118, USA
-The temperature is -4.28 celsius and it feels like -8.59 celsius
+>The temperature is -4.28 celsius and it feels like -8.59 celsius
 ```
