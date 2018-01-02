@@ -6,6 +6,9 @@ It takes in one arguement, that is the location address you want to find the wea
 
 How to use?
 
+ ![alt text](https://i.imgur.com/8Hsczvi.png)
+
+
 ```
 node app.js -a="ADDRESS IS ENTERED HERE"
 ```
@@ -22,3 +25,4 @@ Alternate argument parameter instead of ``` -a ``` is:
 ```
 node app.js --address="ADDRESS IS ENTERED HERE"
 ```
+
