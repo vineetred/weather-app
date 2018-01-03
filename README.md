@@ -1,6 +1,6 @@
 # weather-app
 
-Building a weather app using the Google API and harnessing it with Node.JS
+Building a weather app using the Google API and harnessing it with Node.js
 
 It takes in one arguement, that is the location address you want to find the weather of. The address can be a partial address too.
 
