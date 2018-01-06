@@ -25,4 +25,8 @@ Alternate argument parameter instead of ``` -a ``` is:
 ```
 node app.js --address="ADDRESS IS ENTERED HERE"
 ```
-
+For the webapge branch, you just need to run 
+```
+node app.js
+```
+This will run an express server which can be then accessed on localhost. Input you address there and it will print out the temperature.
